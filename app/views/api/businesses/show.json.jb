@@ -1,1 +1,1 @@
-{message: "Sanity Check"}
+render partial: "business.json.jb", locals: {business: @business}
