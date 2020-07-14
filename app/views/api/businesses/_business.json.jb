@@ -1,0 +1,12 @@
+{
+  id: business.id,
+  name:business.name,
+  email: business.email,
+  address: business.address,
+  phone: business.phone,
+  website: business.website,
+  category: business.category,
+  description: business.description,
+  hours: business.hours,
+  image: business.image
+}

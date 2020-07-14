@@ -1,0 +1,3 @@
+@businesses.map do |business|
+  render partial: "business.json.jb", locals: {business: business}
+end
