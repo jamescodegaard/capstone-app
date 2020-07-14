@@ -23,7 +23,7 @@ class Api::BusinessesController < ApplicationController
     if @business.save
       render "show.json.jb", status: :created
     else
-      render json: { errors: business.errors.full_messages }, status: :bad_request
+      render json: { errors: @business.errors.full_messages }, status: :unprocessable_entity
     end
   end
 

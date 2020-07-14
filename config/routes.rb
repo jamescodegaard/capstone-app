@@ -3,15 +3,25 @@ Rails.application.routes.draw do
   # get "/photos" => "photos#index"
 
   namespace :api do
-    # Business Routes
+    # Businesses
     get "/businesses" => "businesses#index"
     post "/businesses" => "businesses#create" #Signup
     get "/businesses/:id" => "businesses#show"
     patch "/businesses/:id" => "businesses#update"
     delete "/businesses/:id" => "businesses#destroy"
 
-    # Login Routes
+    # Businesses Login
     post "/sessions" => "sessions#create"
+
+    # Events
+    get "/events" => "events#index"
+    post "/events" => "events#create"
+    get "/events/:id" => "events#show"
+    patch "/events/:id" => "events#update"
+    delete "/events/:id" => "events#destroy"
+
+    # Tags
+    get "/tags" => "tags#index"
   end
 
 end
