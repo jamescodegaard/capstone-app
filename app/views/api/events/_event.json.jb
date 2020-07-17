@@ -5,6 +5,6 @@
   description: event.description,
   contact_person: event.alt_contact,
   contact_email: event.alt_email,
-  business: event.business.name,
   image: event.image,
+  tags: event.tags
 }

@@ -5,9 +5,24 @@
 #
 #   Character.create(name: 'Luke', movie: movies.first)
 
-tags = Tag.create([
-  { name: 'Music' }, 
-  { name: 'Beer Release' },
-  { name: 'Recreational' },
-  { name: 'Trivia' }
-])
+# tags = Tag.create([
+#   { name: 'Music' }, 
+#   { name: 'Beer Release' },
+#   { name: 'Recreational' },
+#   { name: 'Trivia' }
+# ])
+
+# event_tags = EventTag.create([
+#     {
+#       event_id: 1,
+#       tag_id: 2
+#     },
+#     {
+#       event_id: 1,
+#       tag_id: 3
+#     },
+#     {
+#       event_id: 1,
+#       tag_id: 1
+#     }
+#   ])

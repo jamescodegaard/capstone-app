@@ -1,1 +1,5 @@
-render partial: "event.json.jb", locals: { event: @event }
+event = render partial: "event.json.jb", locals: { event: @event }
+
+event[:business] = render partial: "/api/businesses/business.json.jb", locals: { business: @event.business }
+
+event
