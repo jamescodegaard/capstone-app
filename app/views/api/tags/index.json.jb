@@ -1,6 +1,3 @@
 @tags.map do |tag|
-  {
-    id: tag.id,
-    name: tag.name
-  }
+  render partial: "tag.json.jb", locals: { tag: tag }
 end

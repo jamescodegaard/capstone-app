@@ -15,22 +15,33 @@ class Api::EventsController < ApplicationController
       business_id: params[:business_id].to_i
     )
     if @event.save
-      @event_tag = EventTag.create(
-        event_id: @event.id,
-        tag_id: params[:tag_1]
-      )
-      @event_tag = EventTag.create(
-        event_id: @event.id,
-        tag_id: params[:tag_2]
-      )
-      @event_tag = EventTag.create(
-        event_id: @event.id,
-        tag_id: params[:tag_3]
-      )
-      @event_tag = EventTag.create(
-        event_id: @event.id,
-        tag_id: params[:tag_4]
-      )
+      @event_tags = []
+      @event_tags << params[:tag_1].to_i || null
+      @event_tags << params[:tag_2].to_i || null
+      @event_tags << params[:tag_3].to_i || null
+      @event_tags << params[:tag_4].to_i || null
+      @event_tags.each do |event_tag|
+        event_tag = EventTag.create(
+          event_id: @event.id,
+          tag_id: event_tag
+        )
+      end
+      # @event_tag = EventTag.create(
+      #   event_id: @event.id,
+      #   tag_id: params[:tag_1]
+      # )
+      # @event_tag = EventTag.create(
+      #   event_id: @event.id,
+      #   tag_id: params[:tag_2]
+      # )
+      # @event_tag = EventTag.create(
+      #   event_id: @event.id,
+      #   tag_id: params[:tag_3]
+      # )
+      # @event_tag = EventTag.create(
+      #   event_id: @event.id,
+      #   tag_id: params[:tag_4]
+      # )
       render "show.json.jb"
     else
       render json: { errors: @event.errors.full_messages }, status: :unprocessable_entity
@@ -50,7 +61,9 @@ class Api::EventsController < ApplicationController
     @event.alt_contact = params[:alt_contact] || @event.alt_contact
     @event.alt_email = params[:alt_email] || @event.alt_email
     @event.image = params[:image] || @event.image
-    
+    # destroy + create EventTags
+    # @event_tags = []
+    # @event_tags << params[:tag_1]
 
     if @event.save
       render "show.json.jb"

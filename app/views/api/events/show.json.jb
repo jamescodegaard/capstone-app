@@ -2,4 +2,8 @@ event = render partial: "event.json.jb", locals: { event: @event }
 
 event[:business] = render partial: "/api/businesses/business.json.jb", locals: { business: @event.business }
 
+event[:tags] = @event.tags.map do |tag|
+  render partial: "/api/tags/tag.json.jb", locals: { tag: tag }
+end
+
 event
