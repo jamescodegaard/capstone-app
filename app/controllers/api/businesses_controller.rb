@@ -48,6 +48,10 @@ class Api::BusinessesController < ApplicationController
     @business.description = params[:description] || @business.description
     @business.hours = params[:hours] || @business.hours
     @business.image = params[:image] || @business.image
+    if params[:password]
+      @business.password = params[:password]
+      @business.password_confirmation = params[:password_confirmation]
+    end
     if params[:address]
       coordinates = Geocoder.coordinates(params[:address])
       @business.latitude = coordinates[0]

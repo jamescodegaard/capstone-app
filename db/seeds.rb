@@ -6,36 +6,36 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 businesses = Business.create([
-  # {
-  #   name: ,
-  #   email: ,
-  #   password: ,
-  #   password_confirmation: ,
-  #   address: ,
-  #   phone: ,
-  #   website: ,
-  #   description: ,
-  #   hours: ,
-  #   image: 
-  # },
-  # {
-  #   name: ,
-  #   email: ,
-  #   password: ,
-  #   password_confirmation: ,
-  #   address: ,
-  #   phone: ,
-  #   website: ,
-  #   description: ,
-  #   hours: ,
-  #   image: 
-  # },
   {
-    name: "Impact Coffee",
-    email: "test4@impactcoffee.com",
+    name: "Oneota Co-Op",
+    email: "oneota@gmail.com",
     password: "password",
     password_confirmation: "password",
-    address: "3251 Stonecreek Drive, Madison, WI 53719",
+    address: "312 W Water St, Decorah, IA 52101",
+    phone: "(563) 382-4666",
+    website: "https://oneotacoop.com/",
+    description: "The mission of the Oneota Community Food Co-op is to build vibrant communities and ecosystems by providing organic, locally produced and bulk foods, as well as other products and services that are sustainable for those who consume and produce them.",
+    hours: "Monday: 9AM–7PM, Tuesday: 9AM–7PM, Wednesday: 9AM–7PM, Thursday: 9AM–7PM, Friday: 9AM–7PM, Saturday: 9AM–7PM, Sunday: 9AM–7PM",
+    image: "https://www.welcometothetable.coop/sites/default/files/logo-oneota-community-co-op.jpg"
+  },
+  {
+    name: "Pulpit Rock Brewing",
+    email: "manager@pulpitrockbrewing.com",
+    password: "password",
+    password_confirmation: "password",
+    address: "207 College Dr. Decorah, IA 52101",
+    phone: "(563) 380-3610",
+    website: "https://www.pulpitrockbrewing.net/",
+    description: "Pulpit Rock Brewing opened its bay doors during the summer of ‘15. Founded by four Luther Alumni, fueled by two creative head-brewers and driven by a small taproom team, this modest brewery embraces the opportunity to produce and serve exciting and innovative beers.",
+    hours: "Monday-Thursday: 2PM-8PM, Monday-Thursday: 2PM-8PM",
+    image: "https://cdn.beeradvocate.com/im/places/42001.jpg"
+  },
+  {
+    name: "Impact Coffee",
+    email: "info@impactcoffee.com",
+    password: "password",
+    password_confirmation: "password",
+    address: "101 W Water St, Decorah, IA 52101",
     phone: "(563) 419-3141",
     website: "https://www.impactcoffee.com/",
     description: "We are a specialty coffee bar and roastery located in Decorah Iowa. Our bar features single origin pour-overs, creatively crafted espresso drinks, and nitro cold brew on draft!",
