@@ -5,6 +5,75 @@
 #
 #   Character.create(name: 'Luke', movie: movies.first)
 
+businesses = Business.create([
+  # {
+  #   name: ,
+  #   email: ,
+  #   password: ,
+  #   password_confirmation: ,
+  #   address: ,
+  #   phone: ,
+  #   website: ,
+  #   description: ,
+  #   hours: ,
+  #   image: 
+  # },
+  # {
+  #   name: ,
+  #   email: ,
+  #   password: ,
+  #   password_confirmation: ,
+  #   address: ,
+  #   phone: ,
+  #   website: ,
+  #   description: ,
+  #   hours: ,
+  #   image: 
+  # },
+  {
+    name: "Impact Coffee",
+    email: "test4@impactcoffee.com",
+    password: "password",
+    password_confirmation: "password",
+    address: "3251 Stonecreek Drive, Madison, WI 53719",
+    phone: "(563) 419-3141",
+    website: "https://www.impactcoffee.com/",
+    description: "We are a specialty coffee bar and roastery located in Decorah Iowa. Our bar features single origin pour-overs, creatively crafted espresso drinks, and nitro cold brew on draft!",
+    hours: "Monday: 8AM - 3PM, Tuesday: 8AM - 3PM, Wednesday: 8AM - 3PM, Thursday: 8AM - 7PM, Friday: 8AM - 7PM,Saturday: 8AM - 6PM, Sunday: 8AM - 1PM",
+    image: "https://cdn.shopify.com/s/files/1/2596/7938/files/Impact_Logo_Final_White.png_2_400x200.png?v=1586899776"
+  }
+])
+
+# events = Event.create([
+#   {
+#     name: ,
+#     date: ,
+#     description: ,
+#     alt_contact: ,
+#     alt_email: ,
+#     image: ,
+#     business_id: 
+#   },
+#   {
+#     name: ,
+#     date: ,
+#     description: ,
+#     alt_contact: ,
+#     alt_email: ,
+#     image: ,
+#     business_id: 
+#   },
+#   {
+#     name: ,
+#     date: ,
+#     description: ,
+#     alt_contact: ,
+#     alt_email: ,
+#     image: ,
+#     business_id: 
+#   }
+# ])
+
 # tags = Tag.create([
 #   { name: 'Music' }, 
 #   { name: 'Beer Release' },

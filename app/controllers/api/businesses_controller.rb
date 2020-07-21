@@ -20,6 +20,11 @@ class Api::BusinessesController < ApplicationController
       hours: params[:hours],
       image: params[:image]
     )
+    if params[:address]
+      coordinates = Geocoder.coordinates(params[:address])
+      @business.latitude = coordinates[0]
+      @business.longitude = coordinates[1]
+    end
     if @business.save
       render "show.json.jb", status: :created
     else
@@ -43,6 +48,11 @@ class Api::BusinessesController < ApplicationController
     @business.description = params[:description] || @business.description
     @business.hours = params[:hours] || @business.hours
     @business.image = params[:image] || @business.image
+    if params[:address]
+      coordinates = Geocoder.coordinates(params[:address])
+      @business.latitude = coordinates[0]
+      @business.longitude = coordinates[1]
+    end
     if @business.save
       render "show.json.jb", status: :created
     else

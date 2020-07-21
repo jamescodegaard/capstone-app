@@ -8,5 +8,7 @@
   category: business.category,
   description: business.description,
   hours: business.hours,
-  image: business.image
+  image: business.image,
+  latitude: business.latitude,
+  longitdue: business.longitude
 }
