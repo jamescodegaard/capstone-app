@@ -1,4 +1,6 @@
 class Api::EventsController < ApplicationController
+  before_action :authenticate_business, except: [:index, :show]
+  
   def index
     @events = Event.all
     render "index.json.jb"
@@ -12,19 +14,9 @@ class Api::EventsController < ApplicationController
       alt_contact: params[:alt_contact],
       alt_email: params[:alt_email],
       image: params[:image],
-      business_id: params[:business_id].to_i
+      business_id: current_business.id
     )
     if @event.save
-      # @event_tags = []
-      # @event_tags << params[:tag_1].to_i || null
-      # @event_tags << params[:tag_2].to_i || null
-      # @event_tags << params[:tag_3].to_i || null
-      # @event_tags << params[:tag_4].to_i || null
-      # @event_tags.each do |event_tag|
-      #   event_tag = EventTag.create(
-      #     event_id: @event.id,
-      #     tag_id: event_tag
-      #   )
       eval(params[:tag_ids]).each do |tag_id| # for front end - need to eliminate 'eval'
         EventTag.create(
           event_id: @event.id,

@@ -1,5 +1,5 @@
 class Api::BusinessesController < ApplicationController
-  # before_action :authenticate_business
+  before_action :authenticate_business, except: [:create, :index, :show]
 
   def index
     @businesses = Business.all

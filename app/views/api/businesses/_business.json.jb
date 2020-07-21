@@ -10,5 +10,5 @@
   hours: business.hours,
   image: business.image,
   latitude: business.latitude,
-  longitdue: business.longitude
+  longitude: business.longitude
 }
