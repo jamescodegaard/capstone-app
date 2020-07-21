@@ -44,54 +44,51 @@ businesses = Business.create([
   }
 ])
 
-# events = Event.create([
-#   {
-#     name: ,
-#     date: ,
-#     description: ,
-#     alt_contact: ,
-#     alt_email: ,
-#     image: ,
-#     business_id: 
-#   },
-#   {
-#     name: ,
-#     date: ,
-#     description: ,
-#     alt_contact: ,
-#     alt_email: ,
-#     image: ,
-#     business_id: 
-#   },
-#   {
-#     name: ,
-#     date: ,
-#     description: ,
-#     alt_contact: ,
-#     alt_email: ,
-#     image: ,
-#     business_id: 
-#   }
-# ])
+events = Event.create([
+  {
+    name: "Saftig Summer Jam",
+    date: "2020-08-28 17:00:00",
+    description: "Come join us for a fun night of music and an outdoor beer extravaganza. We'll being pouring until the kegs are tapped - enjoy the [properly socially-distanced] fun in the sun!",
+    alt_contact: "Brewmaster Bob",
+    alt_email: "bob@gmail.com",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ80TTxXrHzd5kNuXTJQQDDoR-WnSjspXffdA&usqp=CAU",
+    business_id: 2
+  },
+  {
+    name: "Drag w/ an Impact",
+    date: "2020-10-27 20:00:00",
+    description: "The name says it all...have a blast with your favorite local drag queens while sipping on your favorite local coffee/cocktail/beverage of choice! No reservation necessary - and don't remember to bring your tips!",
+    alt_contact: "Gabe",
+    alt_email: "gabe@gmail.com",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/19/d6/b2/fe/sitting-areas.jpg",
+    business_id: 3
+  }
+])
 
-# tags = Tag.create([
-#   { name: 'Music' }, 
-#   { name: 'Beer Release' },
-#   { name: 'Recreational' },
-#   { name: 'Trivia' }
-# ])
+tags = Tag.create([
+  { name: 'Music' }, 
+  { name: 'Beer Release' },
+  { name: 'Recreational' },
+  { name: 'Trivia' },
+  { name: 'Drag Show' },
+  { name: 'Community' },
+])
 
-# event_tags = EventTag.create([
-#     {
-#       event_id: 1,
-#       tag_id: 2
-#     },
-#     {
-#       event_id: 1,
-#       tag_id: 3
-#     },
-#     {
-#       event_id: 1,
-#       tag_id: 1
-#     }
-#   ])
+event_tags = EventTag.create([
+  {
+    event_id: 1,
+    tag_id: 1
+  },
+  {
+    event_id: 1,
+    tag_id: 2
+  },
+  {
+    event_id: 2,
+    tag_id: 5
+  },
+  {
+    event_id: 2,
+    tag_id: 6
+  }
+])

@@ -52,7 +52,7 @@ class Api::BusinessesController < ApplicationController
       @business.password = params[:password]
       @business.password_confirmation = params[:password_confirmation]
     end
-    if params[:address]
+    if params[:address] # feels like wet code compared to above create geocoder - perhaps model method?
       coordinates = Geocoder.coordinates(params[:address])
       @business.latitude = coordinates[0]
       @business.longitude = coordinates[1]
