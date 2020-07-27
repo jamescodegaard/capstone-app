@@ -1,10 +1,10 @@
 {
   id: event.id,
   name: event.name,
-  date: event.date,
+  date: event.formatted_date,
+  time: event.formatted_time,
   description: event.description,
   alt_contact: event.alt_contact,
   alt_email: event.alt_email,
-  image: event.image,
-  business: event.business
+  image: event.image
 }

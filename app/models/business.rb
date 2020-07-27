@@ -4,5 +4,5 @@ class Business < ApplicationRecord
   validates :name, presence: true
   validates :email, presence: true, format: /\w+@\w+\.{1}[a-zA-Z]{2,}/
 
-  has_many :events
+  has_many :events, dependent: :destroy
 end
