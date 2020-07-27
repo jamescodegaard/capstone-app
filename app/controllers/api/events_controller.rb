@@ -17,7 +17,7 @@ class Api::EventsController < ApplicationController
       business_id: current_business.id
     )
     if @event.save
-      eval(params[:tag_ids]).each do |tag_id| # for front end - need to eliminate 'eval'
+      params[:tag_ids].each do |tag_id|
         EventTag.create(
           event_id: @event.id,
           tag_id: tag_id
@@ -45,7 +45,7 @@ class Api::EventsController < ApplicationController
     if @event.save
       @event.event_tags.destroy_all
       if params[:tag_ids]
-        eval(params[:tag_ids]).each do |tag_id| # for front end - need to eliminate 'eval'
+        params[:tag_ids].each do |tag_id|
           EventTag.create(
             event_id: @event.id,
             tag_id: tag_id
