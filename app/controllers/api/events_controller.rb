@@ -35,7 +35,7 @@ class Api::EventsController < ApplicationController
   end
 
   def update
-    @event = Event.find(params[:id])
+    @event = Event.find(current_business.id)
     @event.name = params[:name] || @event.name
     @event.date = params[:date] || @event.date
     @event.description = params[:description] || @event.description

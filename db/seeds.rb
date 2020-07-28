@@ -20,7 +20,7 @@ businesses = Business.create([
   },
   {
     name: "Pulpit Rock Brewing",
-    email: "manager@pulpitrockbrewing.com",
+    email: "pulpit@gmail.com",
     password: "password",
     password_confirmation: "password",
     address: "207 College Dr. Decorah, IA 52101",
@@ -32,7 +32,7 @@ businesses = Business.create([
   },
   {
     name: "Impact Coffee",
-    email: "info@impactcoffee.com",
+    email: "impact@gmail.com",
     password: "password",
     password_confirmation: "password",
     address: "101 W Water St, Decorah, IA 52101",
