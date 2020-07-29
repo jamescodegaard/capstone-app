@@ -2,7 +2,7 @@ class Api::EventsController < ApplicationController
   before_action :authenticate_business, except: [:index, :show]
   
   def index
-    @events = Event.all
+    @events = Event.all.order(:date)
     render "index.json.jb"
   end
 

@@ -2,7 +2,7 @@ class Api::BusinessesController < ApplicationController
   before_action :authenticate_business, except: [:create, :index, :show]
 
   def index
-    @businesses = Business.all
+    @businesses = Business.all.order(:name)
     render 'index.json.jb'
   end
 
