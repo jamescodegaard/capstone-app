@@ -7,5 +7,6 @@
   alt_email: event.alt_email,
   image: event.image,
   formatted_date: event.formatted_date,
-  formatted_time: event.formatted_time
+  formatted_time: event.formatted_time,
+  business: event.business
 }
