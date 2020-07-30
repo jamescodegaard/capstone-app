@@ -8,5 +8,5 @@
   image: event.image,
   formatted_date: event.formatted_date,
   formatted_time: event.formatted_time,
-  business: event.business
+  business_id: event.business_id
 }

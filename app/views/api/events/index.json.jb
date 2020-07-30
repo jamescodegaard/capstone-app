@@ -2,4 +2,8 @@
   render partial: "event.json.jb", locals: { event: event }
 end
 
+@events.each do |event|
+  event[:business] = render partial: "/api/businesses/business.json.jb", locals: { business: Business.find(event[:business_id]) }
+end
+
 @events
