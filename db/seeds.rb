@@ -68,7 +68,46 @@ businesses = Business.create([
     hours: "Wednesday-Saturday: 12PM - 12AM",
     image: "/img/decorah/dougboodle.jpg",
     category: "Music Venue"
-  }
+  },
+  {
+    name: "La Rana Bistro",
+    email: "larana@gmail.com",
+    password: "password",
+    password_confirmation: "password",
+    address: "120 Washington St, Decorah, IA 52101",
+    phone: "(563) 382-3067",
+    website: "https://www.facebook.com/La-Rana-Bistro-108552905850586",
+    description: "Come Join Us for Fresh and Amazing Food and a Fantastic Selection of Cocktails, Wine and Beer! Cheers!",
+    hours: "Monday-Saturday: 11AM - 2PM & 5PM - 9PM, Sunday: Closed",
+    image: "/img/decorah/LaRana.jpg",
+    category: "Restaurant"
+  },
+  {
+    name: "Luna Valley Farm",
+    email: "lunavalleyfarm@gmail.com",
+    password: "password",
+    password_confirmation: "password",
+    address: "3012 Middle Sattre Road, Decorah, IA 52101",
+    phone: "(563) 382-1111",
+    website: "https://www.lunavalleyfarm.com/",
+    description: "We are an organic farm in Decorah, Iowa growing organic crops, grazing sheep and cattle on pasture, powering our farm and home with the sun, and growing deep roots in our community. We love bringing people together over good food, especially when we can share ingredients we’ve grown here at Luna Valley Farm.",
+    hours: "Friday & Saturday nights, May thru October",
+    image: "/img/decorah/lunavalley.jpg",
+    category: "Restaurant"
+  },
+  {
+    name: "Rubaiyat",
+    email: "rubaiyat@gmail.com",
+    password: "password",
+    password_confirmation: "password",
+    address: "117 West Water Street, Decorah, IA 52101",
+    phone: "(563) 382-WINE",
+    website: "http://www.rubaiyatrestaurant.com/",
+    description: "We feature a seasonal American menu, emphasizing straight - forward, approachable cuisine that both looks and tastes clean and composed.  This means simply but skillfully prepared ingredient - driven dishes that reveal our commitment to using the highest quality products, in season, and local when available.",
+    hours: "Wednesday-Saturday: 4:30PM - 7PM",
+    image: "/img/decorah/rubaiyat.jpg",
+    category: "Restaurant"
+  },
 ])
 
 events = Event.create([
@@ -105,7 +144,7 @@ events = Event.create([
     description: "Throughout the Fall we'll be featuring local bands in a weekly concert series. The official lineup for each concert will be announced the week prior. Admission is free and we hope you'll come to support our artists.",
     alt_contact: "Seamus",
     alt_email: "seamus@gmail.com",
-    image: "/img/decorah/events/boodle-concertseries.jpg",
+    image: "/img/decorah/events/boodle-event2.jpg",
     business_id: 4
   },
   {
@@ -114,7 +153,7 @@ events = Event.create([
     description: "Throughout the Fall we'll be featuring local bands in a weekly concert series. The official lineup for each concert will be announced the week prior. Admission is free and we hope you'll come to support our artists.",
     alt_contact: "Seamus",
     alt_email: "seamus@gmail.com",
-    image: "/img/decorah/events/boodle-concertseries.jpg",
+    image: "/img/decorah/events/boodle-event3.jpg",
     business_id: 4
   },
   {
@@ -123,7 +162,7 @@ events = Event.create([
     description: "Throughout the Fall we'll be featuring local bands in a weekly concert series. The official lineup for each concert will be announced the week prior. Admission is free and we hope you'll come to support our artists.",
     alt_contact: "Seamus",
     alt_email: "seamus@gmail.com",
-    image: "/img/decorah/events/boodle-concertseries.jpg",
+    image: "/img/decorah/events/boodle-event4.jpg",
     business_id: 4
   },
   {
@@ -132,7 +171,7 @@ events = Event.create([
     description: "Throughout the Fall we'll be featuring local bands in a weekly concert series. The official lineup for each concert will be announced the week prior. Admission is free and we hope you'll come to support our artists.",
     alt_contact: "Seamus",
     alt_email: "seamus@gmail.com",
-    image: "/img/decorah/events/boodle-concertseries.jpg",
+    image: "/img/decorah/events/boodle-event5.jpg",
     business_id: 4
   }
 ])

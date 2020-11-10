@@ -5,3 +5,5 @@ business[:events] = @business.events.map do |event|
 end
 
 business
+
+

@@ -54,8 +54,10 @@ class Api::BusinessesController < ApplicationController
     end
     if params[:address] # feels like wet code compared to above create geocoder - perhaps model method?
       coordinates = Geocoder.coordinates(params[:address])
-      @business.latitude = coordinates[0]
-      @business.longitude = coordinates[1]
+      if coordinates
+        @business.latitude = coordinates[0]
+        @business.longitude = coordinates[1]
+      end
     end
     if @business.save
       render "show.json.jb", status: :created
